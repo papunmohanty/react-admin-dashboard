@@ -1,9 +1,17 @@
-import "./new.scss"
+import "./new.scss";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
 
 const New = () => {
-    return (
-        <div>New</div>
-    )
-}
+  return (
+    <div className="new">
+      <Sidebar />
+      <div className="newContainer">
+        <Navbar />
+        test
+      </div>
+    </div>
+  );
+};
 
-export default New
+export default New;
