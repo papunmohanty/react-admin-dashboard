@@ -13,7 +13,7 @@ const Datatable = () => {
       renderCell: () => {
         return (
           <div className="cellAction">
-            <Link to="/users/test" style={{ testDecoration: "none" }}>
+            <Link to="/users/test" style={{ textDecoration: "none" }}>
               <div className="viewButton">View</div>
             </Link>
             <div className="deleteButton">Delete</div>
@@ -32,6 +32,7 @@ const Datatable = () => {
         </Link>
       </div>
       <DataGrid
+        className="datagrid"
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
         pageSize={9}
